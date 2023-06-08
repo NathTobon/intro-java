@@ -1,17 +1,18 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Ejercicios;
-
-/**
- *
- * @author natad
- */
+import java.util.Scanner;
 public class Ej07 {
     public static void main(String[] args) {
         //EJERCICIO 7
-        // Pedir frase eureka. Si lo es
+        // Pedir una frase. Si la frase es igual a "eureka" el programa lo toma como Correcto, sino Incorrecto.
+        System.out.println("Ingrese la frase");
+        Scanner read = new Scanner(System.in);
+        String sentence = read.nextLine();
+        read.close();
+
+        if (sentence.equals("eureka")){
+            System.out.println("Correcto");
+        } else {
+            System.out.println("Incorrecto");
+        }
     }
 }
